@@ -71,14 +71,14 @@
 // How many numbers should be in your array when the for loop is done?
 // Print out the array and the array's length at the end and make sure you are right.
 
-let free = ["", ""];
+// let free = ["", ""];
 
-for(var i = 0; i < 4; i++){
-	free.push("420");
-	free.push("420");
-	console.log(free);
-}
-	console.log(free.length);
+// for(var i = 0; i < 4; i++){
+// 	free.push("420");
+// 	free.push("420");
+// 	console.log(free);
+// }
+// 	console.log(free.length);
 
 // 4. Make an array that contains four foods.
 // Set up a for loop that will iterate (go through) the array.
@@ -118,12 +118,12 @@ for(var i = 0; i < 4; i++){
 // 2: Seattle
 // 3: LA
 // 4: San Diego
-let currentCity;
-let cities = ["NY", "Boston" ,"Seattle", "LA", "San Diego"];
-	for(let i = 0; i < cities.length; i++){
-		currentCity = cities[i];
-		console.log([i] + " " + currentCity);
-	}
+// let currentCity;
+// let cities = ["NY", "Boston" ,"Seattle", "LA", "San Diego"];
+// 	for(let i = 0; i < cities.length; i++){
+// 		currentCity = cities[i];
+// 		console.log([i] + " " + currentCity);
+// 	}
 
 // 6. Make an array that contains six numbers.
 // Also make a new, separate empty array called squares.
@@ -137,8 +137,14 @@ let cities = ["NY", "Boston" ,"Seattle", "LA", "San Diego"];
 // Assuming your original array was [2,6,4,3,1,7] ...
 // When it is done running, you should see something like [4, 36, 16, 9, 1, 49]
 
+let numeros = [4, 5, 6, 7, 8, 9];
+let squares = [];
 
-
+for(let i = 0; i < numeros.length; i++){
+		num = numeros[i]
+		console.log([i] + num );
+	}
+	console.log(squares)
 // 7. Make an array that contains six numbers. Feel free to use the same one.
 // Also make a new, separate empty array called reverse.
 // Set up a for loop that will iterate (go through) the array, but BACKWARDS.
@@ -163,15 +169,31 @@ let cities = ["NY", "Boston" ,"Seattle", "LA", "San Diego"];
 // For example, if they type in 4, and then type in c, a, k, e when asked
 // Then at the end it should just say "cake"
 
+// let empArr = [];
+// var readline = require("readline-sync");
 
+// var numberAmt = readline.question("How many letters would you like to type in?  ");
 
+// for(let i = 0; i < numberAmt; i++)
+// {
+// 	var nextNum = readline.question("How many letters ");
+// 	empArr.push(nextNum);
+// 	str = empArr.join("");
+// }
+// 	console.log(str);
 // 9. Make a new empty array.
 // Write a for loop that run ten times. Each time, it should add one random number to your array.
 // When that is done, create another for loop that goes throught this array and,
 // one at a time, prints out each item, so that you can see which items were added.
 // Do NOT just print the whole array at once. Get them one at a time and print them.
 
+let emp = [];
+let randomInt;
+for(i = 0; i < 10; i++ )
+{
+	getRandomInt(1,20);
 
+}
 
 // 10. We will make a deck of cards -- sort of.
 // Create an empty array called deck.
