@@ -14,13 +14,14 @@ let randomInt = require('random-int');
 // let num = readline.question("Enter a number ")
 
 // function evenOdd(num) {
-//   if(num / 2 == 0){
-//     console.log("even")
+//   if(num % 2 == 0){
+//     return (num + " is even");
 //   } else{
-//     console.log("false")
+//     return (num + " is odd");
 //   }
 // }
-//     console.log(num + " is " + evenOdd())
+
+//evenOdd(6);
 // For example, if they type in 7 it would return: "7 is odd".
 // If your function is correct, these should both print true.
 // console.log(evenOdd(7) == "7 is odd");
@@ -51,39 +52,47 @@ let randomInt = require('random-int');
 //     console.log(num)
 // }
 //console.log(num)
-let str = "Pink Guy";
-let letterCounter = {};
 
-for (let i = 0; i < str.length; i++) {
-  let letter = str[i];
-  if (letterCounter[letter] == undefined) {
-    letterCounter[letter] = 1;
-  } else {
-    letterCounter[letter]++;
-  }
-}
+// let string = "Filthy Frank";
+// function totalLetters(str){
+// for (let i = 0; i < string.length; i++) {
+//         return string.length;
+//       }
+//   console.log(totalLetters.count(str))
+// }
+//   totalLetters(string);
+  //let letter = str[i];
+  // if (letterCounter[letter] == undefined) {
+  //   letterCounter[letter] = 1;
+  //  } 
+  //else {
+  //   letterCounter[letter]++;
+  // }
+  //console.log(letterCounter)
+
 // If your function is correct, these should both print true.
 // console.log(totalLetters(["a", "bc", "defg"]) == 7);
 // console.log(totalLetters(["abcdefghij"]) == 10);
 
 // 4a. Write a function that takes in an array and a number and returns the index
 // at which that number FIRST appears in the array.
-// let arr3 = [2, 3, 4, 2, 5, 3, 4], 4]
-// let arr4 = 
-// function firstTime(arr, num) {
-//     for(let i = 0; i < arr3.length; i++){
-
-// }
-// }
+let arr3 = [2, 3, 4, 2, 5, 3, 4]
+let num = []
+function firstTime(arr, num) {
+    //for(let i = 0; i < arr3.length; i++){
+     arr3.find(2);   
+}
+}
+  firstTime([num]);
 // If your function is correct, these should both print true.
 // console.log(firstTime([2, 3, 4, 2, 5, 3, 4], 4) == 2);
 // console.log(firstTime([2, 3, 4, 2, 5, 3, 4], 3) == 1);
 
 // 4b. Write a function that takes in an array and a number and returns the index
 // at which that number LAST appears in the array.
-function lastTime(arr, num) {
+// function lastTime(arr, num) {
 
-}
+// }
 // If your function is correct, these should both print true.
 // console.log(lastTime([2, 3, 4, 2, 5, 3, 4], 4) == 6);
 // console.log(lastTime([2, 3, 4, 2, 5, 3, 4], 3) == 5);
@@ -95,11 +104,11 @@ function lastTime(arr, num) {
 // 5. Use a for loop and multiplication to create a function that calculates
 // exponents for you (and returns the answer).
 // Do NOT use the exponent operation **, that defeats the whole point of the exercise.
-function powers(base, exponent) {
-  let result = 1;
-  // Hint: For loop goes here. Each time through the loop, you should do some
-  // multiplication and store the answer back in result.
-}
+// function powers(base, exponent) {
+//   let result = 1;
+//   // Hint: For loop goes here. Each time through the loop, you should do some
+//   // multiplication and store the answer back in result.
+// }
 // If your function is correct, these should print true.
 // console.log(powers(2, 5) == 32);
 // console.log(powers(3, 4) == 81);
@@ -113,9 +122,9 @@ function powers(base, exponent) {
 
 // function startsWithL(word) {
 //     for(let i = 0; i < findL.length; i++){
-//         findL[i];
-//         let find[i] = startL;
-//           if(startL.includes.toUpperCase("l")){
+//         let findL = startL[i];
+//        // let find[i] = startL;
+//           if(startL.startsWith.toUpperCase("l")){
 //               console.log(findL)
 //           }
 //     }
@@ -134,9 +143,10 @@ function powers(base, exponent) {
 
 // 7. Write a function that takes in a word and returns true/false
 // whether or not that word is in the array of words.
-function inWords(word) {
+
+// function inWords(word) {
   
-}
+// }
 // These should all print true when you are done.
 // console.log(inWords("star") == true);
 // console.log(inWords("starrrrr") == false);
@@ -145,9 +155,10 @@ function inWords(word) {
 
 // 8. Write a function that takes in a letter and returns an array of
 // all of the words that start and end with that letter.
-function startAndEndWith(letter) {
-  //
-}
+
+// function startAndEndWith(letter) {
+//   //
+// }
 // These should all print true when you are done.
 // console.log(startAndEndWith("y").length == 3);
 // console.log(startAndEndWith("y").includes("yearly"));
@@ -159,9 +170,11 @@ function startAndEndWith(letter) {
 // 9. Write a function that takes in a number and returns the factorial of that number.
 // More info: https://www.mathsisfun.com/numbers/factorial.html
 // Use a for loop. Do not try to use the factorial symbol (!), it does not mean that in coding.
-function factorial(num) {
 
-}
+// function factorial(num) {
+
+// }
+
 // These should all print true when you are done.
 // console.log(factorial(5) == 120);
 // console.log(factorial(1) == 1);
@@ -174,6 +187,7 @@ function factorial(num) {
 // Use a for loop.
 // For example, if you call fibonacci(3), that means we want to add three numbers
 // onto that array, so the return value should be the array [0, 1, 1, 2, 3]
+
 // function fibonacci(num) {
 //   let arr = [0, 1]; // This is the starter array that you will add numbers to
 //   // For loop here
@@ -183,14 +197,14 @@ function factorial(num) {
 // console.log(fibonacci(5).pop() == 8);
 // console.log(fibonacci(8).pop() == 34);
 
-
-
-
 // 11. Write a function that takes in an object called coins (see example below) and
 // returns the amount of money those coins represent in dollars.
-function countMoney(coins) {
 
-}
+
+// function countMoney(coins) {
+
+// }
+
 // Below is a test that calls this function with an object that four properties,
 // each representing how many coins I have.
 // let myCoins = {
@@ -199,7 +213,7 @@ function countMoney(coins) {
 //   nickels: 4,
 //   pennies: 5
 // }
-//   console.log(myCoins())
+//   myCoins();
 // If your function is correct, this should print true.
 // console.log(countMoney(myCoins) == 1.05);
 
@@ -211,9 +225,8 @@ function countMoney(coins) {
 //       let numEnter = readline.question("Enter a number")
 //   if(num == 24){
 //     console.log("")
-//   } else{
-
-//   }
+//   } 
 // }
-// Call it and make sure it works
+//}
+//Call it and make sure it works
 // waitFor24();
